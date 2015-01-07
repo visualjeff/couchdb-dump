@@ -1,4 +1,0 @@
-{"docs":[
-{"_id":"e24dd53e9d2d7cd61c8520e13401d68a","_rev":"1-f8d3614814cd3fa18293efe3b535ef22","tags":[],"recipient":{"original":"<vkihwpdh@yahoo.com.tw>","user":"vkihwpdh","host":"yahoo.com.tw"},"headers":{"received":["from 168.61.71.37 (36-224-141-63.dynamic-ip.hinet.net [36.224.141.63])\n by 127.0.0.1 (Haraka/2.5.0) with SMTP id 2D52A3C1-28F9-4306-A3A5-7F6CB58E3593.1\n envelope-from <z2007tw@yahoo.com.tw>;\n Tue, 06 Jan 2015 09:11:41 +0000","from hdqm.1ptjp4z.net [197.38.202.29] by 168.61.71.37 with SMTP; Tue, 06 Jan 2015 11:06:07 +0200"],"message-id":["<j$50vf$z7y$9@kz625>"],"from":["\"\" <z2007tw@yahoo.com.tw>"],"to":["<vkihwpdh@yahoo.com.tw>"],"subject":["BC_168.61.71.37"],"date":["Tue, 06 Jan 15 11:06:07 GMT"],"mime-version":["1.0"],"content-type":["multipart/alternative;\n boundary=\"----=_NextPart_000_000D_01C2CC60.49F4EC70\""],"authentication-results":["127.0.0.1; ; "]},"bodytext":"","content_type":null,"parts":[]}
-]
-}
