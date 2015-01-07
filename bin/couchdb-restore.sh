@@ -55,4 +55,4 @@ db_name=$2
 file_name=$3
 
 
-curl -d @$file_name -X POST http://$url:5984/$db_name/_bulk_docs -H 'Content-Type: application/json'
+curl -d @$file_name -X POST http://$url/$db_name/_bulk_docs -H 'Content-Type: application/json'

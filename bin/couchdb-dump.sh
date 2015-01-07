@@ -72,6 +72,6 @@ do
         cat out.txt
     fi
     let "i += 1" 
-done < <(echo "`curl -X GET http://$url:5984/$db_name/_all_docs?include_docs=true`")
+done < <(echo "`curl -sX GET http://$url/$db_name/_all_docs?include_docs=true`")
 echo "}"
 rm provino.txt out.txt
