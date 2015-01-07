@@ -42,7 +42,7 @@ mkdir -p ./data
 
 for i in "${arr[@]}"
 do
-   outputFile="$i.txt"
-   ./couchdb-dump.sh $fullUrl $i > ./data/$outputFile
+   outputFile="$i.json"
+   ./bin/couchdb-dump.sh $fullUrl $i > ./data/$outputFile
 done
 rm payload.json

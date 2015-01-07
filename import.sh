@@ -34,11 +34,12 @@ port=$2
 fullUrl="$1:$2"
 echo "Importing into: $fullUrl"
 
-FILES="file1
-./data
+FILES="./data"
+
 for f in $FILES
 do
 	echo "importing $f"
-        ./couchdb-restore.sh $fullUrl $i
+        ./bin/couchdb-restore.sh $fullUrl $i
 done
 
+echo "Data imported.  Please confirm.  Then remove the data directory that contains your records."
