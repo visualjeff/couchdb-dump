@@ -2,7 +2,10 @@ Couchdb-dump (& restore) for haraka-couchdb
 ===================================================
 
 ##Quickstart (& quickend)
-`Dump`: ***./export.sh <HOST> <COUCHDB_PORT>***
+```bash
+./export.sh <TARGET_HOST> <COUCHDB_PORT>
 
-`Restore`: ***./import.sh <HOST> <COUCHDB_PORT>***
+./import.sh <TARGET_HOST> <COUCHDB_PORT>
+```
 
+Data is exported to json in a ./data directory.
