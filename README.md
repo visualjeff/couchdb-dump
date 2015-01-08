@@ -9,3 +9,5 @@ Couchdb-dump (& restore) for haraka-couchdb
 ```
 
 Data is exported to json in a ./data directory.
+
+NOTE: Tested with couchdb 1.6.1
