@@ -51,8 +51,12 @@ fi
 
 ## VARS
 url=$1
-db_name=$2
+db_name=( $(echo $2 | sed "s/\.\/data\///"))
 file_name=$3
 
+#echo "  $url"
+#echo "  $db_name"
+#echo "  $file_name"
 
-curl -d @$file_name -X POST http://$url/$db_name/_bulk_docs -H 'Content-Type: application/json'
+curl -X PUT http://$url/$db_name
+curl --data-binary @$file_name -X POST http://$url/$db_name/_bulk_docs -H 'Content-Type: application/json'

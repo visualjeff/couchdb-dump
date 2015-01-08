@@ -45,4 +45,4 @@ do
    outputFile="$i.json"
    ./bin/couchdb-dump.sh $fullUrl $i > ./data/$outputFile
 done
-rm payload.json
+

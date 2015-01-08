@@ -33,13 +33,14 @@ port=$2
 
 fullUrl="$1:$2"
 echo "Importing into: $fullUrl"
+echo ""
+FILES=./data/*
 
-FILES="./data"
-
-for f in $FILES
+for fileName in $FILES
 do
-	echo "importing $f"
-        ./bin/couchdb-restore.sh $fullUrl $i
+	echo "importing $fileName"
+        databaseName=( $(echo $fileName | sed "s/\.json//"))
+        ./bin/couchdb-restore.sh $fullUrl $databaseName $fileName
 done
-
+echo ""
 echo "Data imported.  Please confirm.  Then remove the data directory that contains your records."
