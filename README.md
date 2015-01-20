@@ -11,3 +11,7 @@ Couchdb-dump (& restore) for haraka-couchdb
 Data is exported to json in a ./data directory.
 
 NOTE: Tested with couchdb 1.6.1
+
+
+addDesignDocument.sh is a script for add the mailBoxes.json design document to each database.
+./addDesignDocument.sh http://haraka-couchdb.cloudapp.net 5984
